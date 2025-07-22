@@ -159,14 +159,13 @@ function loadAnswers() {
     answer3.innerText = questions[questionIndex].answers[3];
 }
 
-// STILL TO FIX: innerHTML does NOT show scoreTotal value correctly
 function resumeQuiz() {
     let quizLength = questions.length;
     if (questionIndex < quizLength) {
         loadQuestion();
         loadAnswers();
     } else {
-        questionContainer.innerHTML = "<h2>Congratulations! You finished the quiz and knew ${scoreTotal} of the 27 capitals of the EU.</h2>"
+        questionContainer.innerHTML = `Congratulations! You finished the quiz and reached a score of ${scoreTotal}`
     }
 }
 
