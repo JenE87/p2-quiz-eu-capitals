@@ -4,17 +4,25 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link href="assets/css/style.css" rel="stylesheet">
-    <title>Document</title>
+    <!--Title-->
+    <title>EU Capitals - Quiz</title>
+    <!--Favicon-->
+    <link rel="apple-touch-icon" sizes="180x180" href="assets/images/favicon/apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="assets/images/favicon/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="assets/images/favicon/favicon-16x16.png">
+    <link rel="manifest" href="assets/images/favicon/site.webmanifest">
 </head>
 <body>
     <div class="quiz-container">
         <h1>Quiz - Capitals of the EU</h1>
         <div id="question-container">
             <div id="question"></div>
-            <button id="answer0" onclick="checkAnswer(0)"></button>
-            <button id="answer1" onclick="checkAnswer(1)"></button>
-            <button id="answer2" onclick="checkAnswer(2)"></button>
-            <button id="answer3" onclick="checkAnswer(3)"></button>
+            <div id="answers">
+                <button id="answer0" onclick="checkAnswer(0)"></button>
+                <button id="answer1" onclick="checkAnswer(1)"></button>
+                <button id="answer2" onclick="checkAnswer(2)"></button>
+                <button id="answer3" onclick="checkAnswer(3)"></button>
+            </div>
         </div>
         <p>Score: <span id="score">0</span></p>
     </div>
