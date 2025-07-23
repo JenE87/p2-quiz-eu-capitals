@@ -165,20 +165,39 @@ function resumeQuiz() {
         loadQuestion();
         loadAnswers();
     } else {
-        questionContainer.innerHTML = `Congratulations! You finished the quiz and reached a score of ${scoreTotal}`
+        questionContainer.innerHTML = `Congratulations! You finished the quiz.`
     }
 }
 
 function checkAnswer(answerSelected) {
-    console.log("You selected: ", answerSelected);
-    correctAnswer = questions[questionIndex].correct;
+    const correctAnswer = questions[questionIndex].correct;
+    const selectedButton = document.getElementById(`answer${answerSelected}`);
+    const correctButton = document.getElementById(`answer${correctAnswer}`);
+
     if (answerSelected === correctAnswer) {
-        console.log("Yes, your answer is correct");
         scoreTotal++;
         score.innerText = scoreTotal;
+        selectedButton.classList.add("correct");
+    } else {
+        selectedButton.classList.add("incorrect");
     }
-    questionIndex++;
-    resumeQuiz();
+
+    // Disable buttons temporarily
+    for (let i = 0; i < 4; i++) {
+        document.getElementById(`answer${i}`).disabled = true;
+    }
+
+    // Pause the quiz before going to the next question
+    setTimeout(() => {
+        // Give visual feedback
+        for (let i = 0; i < 4; i++) {
+            const btn = document.getElementById(`answer${i}`);
+            btn.classList.remove("correct", "incorrect");
+            btn.disabled = false;
+        }
+        questionIndex++;
+        resumeQuiz();
+    }, 1000);
 }
 
 resumeQuiz();

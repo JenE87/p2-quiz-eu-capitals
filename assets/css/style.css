@@ -59,6 +59,14 @@ button:hover {
     transform: scale(1.02);
 }
 
+.correct {
+    background-color: #1a721a !important;
+}
+
+.incorrect {
+    background-color: #cf0a0a !important;
+}
+
 @media (max-width: 600px) {
     .quiz-container {
         padding: 10px 15px;
