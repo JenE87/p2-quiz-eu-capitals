@@ -4,8 +4,7 @@ body {
     justify-content: center;
     align-items: center;
     height: 100vh;
-    /*background-color: #004494; /* EU blue */
-    background: url(/assets/images/eu_flag.png) no-repeat center center fixed;
+    background: url(../images/eu_flag.png) no-repeat center center fixed;
     background-size: cover;
     color: #ffffff;
 }
@@ -13,7 +12,7 @@ body {
 .quiz-container {
     text-align: center;
     background-color: rgba(255, 255, 255, 0.75);
-    color: #000;
+    color: #000000;
     padding: 20px 30px;
     border-radius: 10px;
     width: 70%;
@@ -40,13 +39,13 @@ button {
     border-radius: 5px;
     border: none;
     color: #ffffff;
-    background-color: #004494; /* EU blue */
+    background-color: #003776; /* EU blue */
     cursor: pointer;
     transition: background-color 0.3s ease;
 }
 
 button:hover {
-    background-color: #0044cc; 
+    background-color: #014ea6; 
     outline: 2px solid #ffd617; 
     transform: scale(1.02);
 }
@@ -75,5 +74,6 @@ button:hover {
 
     button {
         font-size: 0.8rem;
+        width: 55%;
     }
 }
