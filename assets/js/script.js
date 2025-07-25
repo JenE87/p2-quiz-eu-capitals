@@ -200,4 +200,7 @@ function checkAnswer(answerSelected) {
     }, 500);
 }
 
+// Randomize Questions
+let shuffleQuestions = questions.sort(() => Math.random() - 0.5);
+
 resumeQuiz();
