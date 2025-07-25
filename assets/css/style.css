@@ -4,7 +4,9 @@ body {
     justify-content: center;
     align-items: center;
     height: 100vh;
-    background-color: #004494; /* EU blue */
+    /*background-color: #004494; /* EU blue */
+    background: url(/assets/images/eu_flag.png) no-repeat center center fixed;
+    background-size: cover;
     color: #ffffff;
 }
 
