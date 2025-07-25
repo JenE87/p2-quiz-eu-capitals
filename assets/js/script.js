@@ -7,6 +7,12 @@ const answer2 = document.getElementById("answer2");
 const answer3 = document.getElementById("answer3");
 const score = document.getElementById("score");
 
+const answerButtons = [answer0, answer1, answer2, answer3];
+
+answerButtons.forEach((btn, index) => {
+    btn.addEventListener("click", () => checkAnswer(index));
+});
+
 const originalQuestions = [
     {
         "question": "What is the capital of Austria?",
