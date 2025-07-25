@@ -197,7 +197,7 @@ function checkAnswer(answerSelected) {
         }
         questionIndex++;
         resumeQuiz();
-    }, 1000);
+    }, 500);
 }
 
 resumeQuiz();
