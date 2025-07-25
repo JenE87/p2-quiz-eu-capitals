@@ -7,7 +7,7 @@ const answer2 = document.getElementById("answer2");
 const answer3 = document.getElementById("answer3");
 const score = document.getElementById("score");
 
-const questions = [
+const originalQuestions = [
     {
         "question": "What is the capital of Austria?",
         "answers": ["Salzburg", "Vienna", "Innsbruck", "Graz"],
@@ -45,7 +45,7 @@ const questions = [
     },
     {
         "question": "What is the capital of Estonia?",
-        "answers": ["Paernu", "Narva", "Tartu", "Tallin"],
+        "answers": ["Paernu", "Narva", "Tartu", "Tallinn"],
         "correct": 3
     },
     {
@@ -149,14 +149,14 @@ let questionIndex = 0;
 let scoreTotal = 0;
 
 function loadQuestion() {
-    question.innerText = questions[questionIndex].question;
+    question.textContent = questions[questionIndex].question;
 }
 
 function loadAnswers() {
-    answer0.innerText = questions[questionIndex].answers[0];
-    answer1.innerText = questions[questionIndex].answers[1];
-    answer2.innerText = questions[questionIndex].answers[2];
-    answer3.innerText = questions[questionIndex].answers[3];
+    answer0.textContent = questions[questionIndex].answers[0];
+    answer1.textContent = questions[questionIndex].answers[1];
+    answer2.textContent = questions[questionIndex].answers[2];
+    answer3.textContent = questions[questionIndex].answers[3];
 }
 
 function resumeQuiz() {
@@ -201,6 +201,6 @@ function checkAnswer(answerSelected) {
 }
 
 // Randomize Questions
-let shuffleQuestions = questions.sort(() => Math.random() - 0.5);
+const questions = originalQuestions.sort(() => Math.random() - 0.5);
 
 resumeQuiz();
