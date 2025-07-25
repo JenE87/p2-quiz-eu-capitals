@@ -153,10 +153,9 @@ function loadQuestion() {
 }
 
 function loadAnswers() {
-    answer0.textContent = questions[questionIndex].answers[0];
-    answer1.textContent = questions[questionIndex].answers[1];
-    answer2.textContent = questions[questionIndex].answers[2];
-    answer3.textContent = questions[questionIndex].answers[3];
+    for (let i = 0; i< 4; i++) {
+        document.getElementById(`answer${i}`).textContent = questions[questionIndex].answers[i];
+    }
 }
 
 function resumeQuiz() {
