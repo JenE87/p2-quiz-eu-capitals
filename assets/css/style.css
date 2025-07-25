@@ -29,7 +29,7 @@ body {
     margin: 5px 0;
 }
 
-#answers button {
+button {
     padding: 10px;
     margin: 10px auto;
     display: block;
@@ -41,16 +41,6 @@ body {
     background-color: #004494; /* EU blue */
     cursor: pointer;
     transition: background-color 0.3s ease;
-}
-
-#next-button {
-    padding: 10px;
-    font-size: 1rem;
-    border-radius: 5px;
-    border: none;
-    background-color: #004494;
-    color: #ffffff;
-    cursor: pointer;
 }
 
 button:hover {
