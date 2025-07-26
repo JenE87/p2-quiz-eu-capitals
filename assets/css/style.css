@@ -47,16 +47,9 @@ button {
     transition: background-color 0.3s ease;
 }
 
-button:hover {
-    background-color: #014ea6; 
-    outline: 2px solid #ffd617; 
-    transform: scale(1.02);
-}
-
 .hidden {
     display: none;
 }
-
 
 
 /* Styles for visual user feedback */
@@ -86,5 +79,14 @@ button:hover {
     button {
         font-size: 0.8rem;
         width: 55%;
+    }
+}
+
+/* Only use hover effect on devices with hover capability */
+@media (hover: hover) {
+    button:hover {
+    background-color: #014ea6; 
+    outline: 2px solid #ffd617; 
+    transform: scale(1.02);
     }
 }
