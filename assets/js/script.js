@@ -215,3 +215,22 @@ function checkAnswer(answerSelected) {
 const questions = originalQuestions.sort(() => Math.random() - 0.5);
 
 resumeQuiz();
+
+restartBtn.addEventListener("click", () => {
+    // Shuffle questions again
+    questions.sort(() => Math.random() -0.5);
+
+    // Reset values
+    questionIndex = 0;
+    scoreTotal = 0;
+    score.textContent = 0;
+
+    // Hide end of quiz message, show quiz and score again
+    endMessage.classList.add("hidden");
+    questionContainer.classList.remove("hidden");
+    scoreContainer.classList.remove("hidden");
+
+    resumeQuiz();
+});
+
+resumeQuiz();
