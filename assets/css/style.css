@@ -1,3 +1,4 @@
+/* Basic styles */
 body {
     font-family: Calibri, sans-serif;
     display: flex;
@@ -9,6 +10,7 @@ body {
     color: #ffffff;
 }
 
+/* Quiz Container */
 .quiz-container {
     text-align: center;
     background-color: rgba(255, 255, 255, 0.75);
@@ -30,6 +32,7 @@ body {
     margin: 5px 0;
 }
 
+/* Buttons style */
 button {
     padding: 10px;
     margin: 10px auto;
@@ -50,6 +53,13 @@ button:hover {
     transform: scale(1.02);
 }
 
+.hidden {
+    display: none;
+}
+
+
+
+/* Styles for visual user feedback */
 .correct {
     background-color: #1a721a !important;
 }
@@ -58,6 +68,7 @@ button:hover {
     background-color: #cf0a0a !important;
 }
 
+/* Responsiveness for screens under 600px */
 @media (max-width: 600px) {
     .quiz-container {
         padding: 10px 15px;

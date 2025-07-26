@@ -6,6 +6,10 @@ const answer1 = document.getElementById("answer1");
 const answer2 = document.getElementById("answer2");
 const answer3 = document.getElementById("answer3");
 const score = document.getElementById("score");
+const scoreContainer = document.getElementById("score-container");
+const endMessage = document.getElementById("end-message");
+const quizEndText = document.getElementById("quiz-end-text");
+const restartBtn = document.getElementById("restart-btn");
 
 const answerButtons = [answer0, answer1, answer2, answer3];
 
@@ -165,12 +169,14 @@ function loadAnswers() {
 }
 
 function resumeQuiz() {
-    let quizLength = questions.length;
-    if (questionIndex < quizLength) {
+    if (questionIndex < questions.length) {
         loadQuestion();
         loadAnswers();
     } else {
-        questionContainer.innerHTML = `Congratulations! You finished the quiz.`
+        quizEndText.textContent = `Congratulations! You finished the quiz with a score of ${scoreTotal}/${questions.length}.`
+        endMessage.classList.remove("hidden");
+        questionContainer.classList.add("hidden");
+        scoreContainer.classList.add("hidden");
     }
 }
 

@@ -24,7 +24,13 @@
                 <button type="button" id="answer3"></button>
             </div>
         </div>
-        <p>Score: <span id="score" aria-live="polite">0</span></p>
+        <div id="score-container">
+            <p>Score: <span id="score" aria-live="polite">0</span></p>
+        </div>
+        <div id="end-message" class="hidden">
+            <p id="quiz-end-text"></p>
+            <button type="button" id="restart-btn">Restart Quiz</button>
+        </div>
     </main>
     <script src="assets/js/script.js"></script>
 </body>
