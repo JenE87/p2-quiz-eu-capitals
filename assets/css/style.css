@@ -23,13 +23,18 @@ body {
 }
 
 #question {
-    font-size: 1.2rem;
+    font-size: 1.4rem;
+    margin-bottom: 16px;
 }
 
 #answers {
     display: flex;
     flex-direction: column;
     margin: 5px 0;
+}
+
+#quiz-end-text {
+    font-size: 1.3rem;
 }
 
 /* Buttons style */
@@ -50,7 +55,6 @@ button {
 .hidden {
     display: none;
 }
-
 
 /* Styles for visual user feedback */
 .correct {
@@ -74,6 +78,10 @@ button {
 
     #question {
         font-size: 1.1rem;
+    }
+
+    #quiz-end-text {
+    font-size: 1rem;
     }
 
     button {
