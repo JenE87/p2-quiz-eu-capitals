@@ -183,7 +183,6 @@ function resumeQuiz() {
 function checkAnswer(answerSelected) {
     const correctAnswer = questions[questionIndex].correct;
     const selectedButton = document.getElementById(`answer${answerSelected}`);
-    const correctButton = document.getElementById(`answer${correctAnswer}`);
 
     if (answerSelected === correctAnswer) {
         scoreTotal++;
