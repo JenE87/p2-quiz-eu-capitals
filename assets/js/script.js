@@ -216,6 +216,7 @@ const questions = originalQuestions.sort(() => Math.random() - 0.5);
 
 resumeQuiz();
 
+// Restart of the quiz by clicking the restart the quiz button
 restartBtn.addEventListener("click", () => {
     // Shuffle questions again
     questions.sort(() => Math.random() -0.5);
