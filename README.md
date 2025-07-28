@@ -32,7 +32,7 @@ Once the restart the quiz button has been clicked the quiz will resume with the 
 ## Design & Layout
 - Responsive design for mobile and desktop
 - Accessible design with ARIA attributes and semantic HTML
-- Minimalist styling with use of EU colors and the EU flag as a Background and favicon
+- Minimalist styling using Calibri as font, sans serif font as backup, and EU colors and the EU flag as a background and favicon.
 
 ## Testing
 ### Manual Testing 
@@ -49,6 +49,10 @@ On devices with the capability of hovering with a mouse/cursor, all buttons are 
 
 ### Fixed Bugs
 - On mobile devices the hover effect stayed on the latest selected answer button. This bug was fixed using a media query.
+- Spelling mistakes of city names (i.e. Tallinn and Brussels) were corrected.
+- Meta description and Keyword tags were added for SEO. 
+
+### Unfixed Bugs
 
 ## Deployment
 The site was deployed to GitHub pages. The steps to deploy are as follows:
@@ -67,3 +71,13 @@ The site was deployed to GitHub pages. The steps to deploy are as follows:
 The live link to the Cleanup & Connect website is accessible here - https://jene87.github.io/p2-quiz-eu-capitals/
 
 ## Credits
+### Code
+
+### Content & Media
+- The background image was downloaded from the open source site pixabay (pixabay.com), user: OpenClipart-Vectors.
+- The European Union flag Favicon was downloaded from Favicon.io. (https://favicon.io/emoji-favicons/flag-european-union/)
+- Colors and color scheme were chosen based on information on colors of the EU system by the European Commission (https://ec.europa.eu/component-library/v1.15.0/eu/components/detail/eu-style-color/)
+  - #003776 (EC blue 120) 
+	- #ffd617 (EC yellow 100)
+- The list of EU countries and their capitals were taken from the European Union Website: Easy to read – about the EU (https://european-union.europa.eu/easy-read_en).
+- All incorrect answers (3 cities per country) were searched for by the author using Google Maps (https://www.google.com/maps).
