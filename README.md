@@ -75,9 +75,9 @@ The live link to the Cleanup & Connect website is accessible here - https://jene
 
 ### Content & Media
 - The background image was downloaded from the open source site pixabay (pixabay.com), user: OpenClipart-Vectors.
-- The European Union flag Favicon was downloaded from Favicon.io. (https://favicon.io/emoji-favicons/flag-european-union/)
-- Colors and color scheme were chosen based on information on colors of the EU system by the European Commission (https://ec.europa.eu/component-library/v1.15.0/eu/components/detail/eu-style-color/)
-  - #003776 (EC blue 120) 
-	- #ffd617 (EC yellow 100)
-- The list of EU countries and their capitals were taken from the European Union Website: Easy to read – about the EU (https://european-union.europa.eu/easy-read_en).
-- All incorrect answers (3 cities per country) were searched for by the author using Google Maps (https://www.google.com/maps).
+- The European Union flag Favicon was downloaded from [Favicon.io](https://favicon.io/emoji-favicons/flag-european-union/).
+- Colors and color scheme were chosen based on information on colors of the EU system by the [European Commission](https://ec.europa.eu/component-library/v1.15.0/eu/components/detail/eu-style-color/)
+  - #003776 (EC blue 120)
+  - #ffd617 (EC yellow 100)
+- The list of EU countries and their capitals were taken from the European Union website: [Easy to read – about the EU](https://european-union.europa.eu/easy-read_en).
+- All incorrect answers (3 cities per country) were searched for by the author using [Google Maps](https://www.google.com/maps).
