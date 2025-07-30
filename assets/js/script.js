@@ -192,7 +192,7 @@ function resumeQuiz() {
         loadQuestion();
         loadAnswers();
     } else {
-        quizEndText.textContent = `Congratulations! You finished the quiz with a score of ${scoreTotal}/${questions.length}.`
+        quizEndText.textContent = `Congratulations! You finished the quiz with a score of ${scoreTotal}/${questions.length}.`;
         endMessage.classList.remove("hidden");
         questionContainer.classList.add("hidden");
         scoreContainer.classList.add("hidden");
