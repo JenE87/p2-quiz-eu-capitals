@@ -9,7 +9,8 @@ A browser-based multiple-choice quiz that tests users on their knowledge of Euro
 The question line provides 27 randomized questions, one for each current EU member state. A new question is loaded with a 0.5s delay upon selecting an answer for the current question. 
 Once all 27 questions have been answered, an end of quiz message appears instead of the question line.
 
-<img width="520" height="101" alt="Screenshot 2025-07-30 184522" src="https://github.com/user-attachments/assets/eea83f95-d88a-49b0-bd17-434ea034a87d" />
+<img width="520" height="101" alt="Screenshot 2025-07-30 184522" src="https://github.com/user-attachments/assets/24dd7c37-8122-494b-9188-3d456b4e2659" />
+
 ### Multiple choice answer section
 The quiz follows a multiple choice format with four answer options per question. The answer is a choice between four cities based in the respective EU country. 
 On devices with hover capability the answer buttons are responsive upon hovering, in that they change their background color, are slightly enlarged and framed by a border. 
@@ -17,14 +18,17 @@ Upon selecting an answer the user receives immediate feedback for correct and in
 Simultaneous to the question line, four new answer buttons are provided with a 0.5s delay upon selecting an answer for the current question. 
 
 <img width="501" height="289" alt="Screenshot 2025-07-30 184542" src="https://github.com/user-attachments/assets/925a3352-45a4-4dd8-9986-7449ee1eae21" />
+
 ### Live Score
 Underneath the question line and answer section a live score tracking of all correct answers is provided. Once all 27 questions have been answered, an end of quiz message appears with a total score instead of the live score.
 
 <img width="531" height="71" alt="Screenshot 2025-07-30 184610" src="https://github.com/user-attachments/assets/60ba8461-9a51-414a-be30-230ee18ec416" />
+
 ### End of quiz message with final score
 Once all 27 questions have been answered, the question line, answer section and live score are replaced by an end of quiz message congratulating the user on the completion of the quiz. The message includes the Information on the score reached.
 
 <img width="572" height="258" alt="Screenshot 2025-07-30 184733" src="https://github.com/user-attachments/assets/f2184972-bf06-468c-bbd7-3cd477a3dd1b" />
+
 ### Restart button
 Included underneath the end of quiz message the user is provided with a button to restart the quiz. 
 As with the answer buttons, on devices with hover capability the restart the quiz button is responsive upon hovering, in that it changes its background color, is slightly enlarged and framed by a border.
@@ -89,7 +93,7 @@ Perfomance, Accessibility, Best Practises and SEO were analyzed through Lighthou
 None
 
 ## Deployment
-The site was deployed to GitHub pages. The steps to d ceploy are as follows:
+The site was deployed to GitHub pages. The steps to deploy are as follows:
 1. Go to the **Settings** tab in the GitHub repository
 2. In the sidebar on the left select **Pages** (Code and automation section)
 3. Ensure to:
@@ -102,7 +106,7 @@ The site was deployed to GitHub pages. The steps to d ceploy are as follows:
 7. Click on **github-pages** in this new section 
 8. The link to the latest deployment is accessible through a link in a box at the top of the page 
 
-The live link to the Cleanup & Connect website is accessible here - https://jene87.github.io/p2-quiz-eu-capitals/
+The live link to the website is accessible here: [Quiz - EU Capitals](https://jene87.github.io/p2-quiz-eu-capitals/)
 
 ## Credits
 ### Code
@@ -110,14 +114,14 @@ My code is inspired by lessons and modules included in the Code Institute's Full
 
 My code is also inspired by my mentors, Spencer Barribal, YouTube Video ["Building a JavaScript Quiz - Just the Engine (Dev Log 001)"](https://www.youtube.com/watch?v=iPsQMz2NH3s).
 
-Other web development resources:
+Other learning resources:
 - [mdn web docs - JavaScript](https://developer.mozilla.org/en-US/docs/Web/JavaScript)
 - [W3 schools](https://www.w3schools.com/)
 - [freeCodeCamp - JS Basic Handbook](https://www.freecodecamp.org/news/learn-javascript-for-beginners/)
 - [Scimba](https://scimba.com)
 
 ### Content & Media
-- The background image was downloaded from the open source site pixabay (pixabay.com), user: OpenClipart-Vectors.
+- The background image was downloaded from the open source site [pixabay](pixabay.com), user: OpenClipart-Vectors.
 - The European Union flag Favicon was downloaded from [Favicon.io](https://favicon.io/emoji-favicons/flag-european-union/).
 - Colors and color scheme were chosen based on information on colors of the EU system by the [European Commission](https://ec.europa.eu/component-library/v1.15.0/eu/components/detail/eu-style-color/)
   - #003776 (EC blue 120)
