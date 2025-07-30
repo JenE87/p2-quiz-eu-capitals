@@ -1,9 +1,15 @@
 /* Basic styles */
 body {
     font-family: Calibri, sans-serif;
+    display: -webkit-box;
+    display: -ms-flexbox;
     display: flex;
-    justify-content: center;
-    align-items: center;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
     height: 100vh;
     background: url(../images/eu_flag.png) no-repeat center center fixed;
     background-size: cover;
@@ -19,7 +25,8 @@ body {
     border-radius: 10px;
     width: 70%;
     max-width: 500px;
-    box-shadow: 0 0 10px rgba(0, 0, 0, 1);
+    -webkit-box-shadow: 0 0 10px rgba(0, 0, 0, 1);
+            box-shadow: 0 0 10px rgba(0, 0, 0, 1);
 }
 
 #question {
@@ -28,8 +35,13 @@ body {
 }
 
 #answers {
+    display: -webkit-box;
+    display: -ms-flexbox;
     display: flex;
-    flex-direction: column;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
     margin: 5px 0;
 }
 
@@ -49,6 +61,8 @@ button {
     color: #ffffff;
     background-color: #003776; /* EU blue */
     cursor: pointer;
+    -webkit-transition: background-color 0.3s ease;
+    -o-transition: background-color 0.3s ease;
     transition: background-color 0.3s ease;
 }
 
@@ -95,6 +109,8 @@ button {
     button:hover {
     background-color: #014ea6; 
     outline: 2px solid #ffd617; 
-    transform: scale(1.02);
+    -webkit-transform: scale(1.02); 
+        -ms-transform: scale(1.02); 
+            transform: scale(1.02);
     }
 }
