@@ -158,16 +158,35 @@ const originalQuestions = [
 let questionIndex = 0;
 let scoreTotal = 0;
 
+/**
+ * Function loads the current question text into the question container
+ * 
+ * Updates the inner text of the #question element using the current question from
+ * the shuffled questions array, based on the questionIndex
+ */
 function loadQuestion() {
     question.textContent = questions[questionIndex].question;
 }
 
+/**
+ * Loads the answer options for the current question.
+ * 
+ * Sets the text content of the #answer0 to #answer3 with the answer choices from 
+ * the current question object in the questions array.
+ */
 function loadAnswers() {
     for (let i = 0; i< 4; i++) {
         document.getElementById(`answer${i}`).textContent = questions[questionIndex].answers[i];
     }
 }
 
+/**
+ * Resumes or end the quiz based on the current progress.
+ * 
+ * If more questions remain, it loads the next one. If the quiz is complete, it 
+ * displays the end message, hides the question and score containers, and shows 
+ * the final score inside the #quiz-end-text.
+ */
 function resumeQuiz() {
     if (questionIndex < questions.length) {
         loadQuestion();
@@ -180,6 +199,15 @@ function resumeQuiz() {
     }
 }
 
+/**
+ * Checks whether the selected answer is correct and updates the score
+ * 
+ * @param {number} answerSelected - Index of the clicked answer button (0-3).
+ * 
+ * Adds visual feedback (green/red) based on correctness, updates score (when answer
+ * is correct), disables buttons temporarily, and after a short delay, loads the 
+ * next question.
+ */
 function checkAnswer(answerSelected) {
     const correctAnswer = questions[questionIndex].correct;
     const selectedButton = document.getElementById(`answer${answerSelected}`);
@@ -199,7 +227,7 @@ function checkAnswer(answerSelected) {
 
     // Pause the quiz before going to the next question
     setTimeout(() => {
-        // Give visual feedback
+        // Visual feedback
         for (let i = 0; i < 4; i++) {
             const btn = document.getElementById(`answer${i}`);
             btn.classList.remove("correct", "incorrect");
@@ -215,7 +243,12 @@ const questions = originalQuestions.sort(() => Math.random() - 0.5);
 
 resumeQuiz();
 
-// Restart of the quiz by clicking the restart the quiz button
+/**
+ * Resets the quiz when the "Restart Quiz" button is clicked.
+ * 
+ * Shuffles the questions array again, resets score and index, hides the end screen,
+ * shows the question and score container, and resumes the quiz from the beginning.
+ */
 restartBtn.addEventListener("click", () => {
     // Shuffle questions again
     questions.sort(() => Math.random() -0.5);
