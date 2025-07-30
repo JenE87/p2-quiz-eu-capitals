@@ -8,23 +8,28 @@ A browser-based multiple-choice quiz that tests users on their knowledge of Euro
 ### Question line 
 The question line provides 27 randomized questions, one for each current EU member state. A new question is loaded with a 0.5s delay upon selecting an answer for the current question. 
 Once all 27 questions have been answered, an end of quiz message appears instead of the question line.
+
 <img width="520" height="101" alt="Screenshot 2025-07-30 184522" src="https://github.com/user-attachments/assets/eea83f95-d88a-49b0-bd17-434ea034a87d" />
 ### Multiple choice answer section
 The quiz follows a multiple choice format with four answer options per question. The answer is a choice between four cities based in the respective EU country. 
 On devices with hover capability the answer buttons are responsive upon hovering, in that they change their background color, are slightly enlarged and framed by a border. 
 Upon selecting an answer the user receives immediate feedback for correct and incorrect answers. For correct answers the answer button's background appears green. For incorrect answers the answer button's background appears in red.
 Simultaneous to the question line, four new answer buttons are provided with a 0.5s delay upon selecting an answer for the current question. 
+
 <img width="501" height="289" alt="Screenshot 2025-07-30 184542" src="https://github.com/user-attachments/assets/925a3352-45a4-4dd8-9986-7449ee1eae21" />
 ### Live Score
 Underneath the question line and answer section a live score tracking of all correct answers is provided. Once all 27 questions have been answered, an end of quiz message appears with a total score instead of the live score.
+
 <img width="531" height="71" alt="Screenshot 2025-07-30 184610" src="https://github.com/user-attachments/assets/60ba8461-9a51-414a-be30-230ee18ec416" />
 ### End of quiz message with final score
 Once all 27 questions have been answered, the question line, answer section and live score are replaced by an end of quiz message congratulating the user on the completion of the quiz. The message includes the Information on the score reached.
+
 <img width="572" height="258" alt="Screenshot 2025-07-30 184733" src="https://github.com/user-attachments/assets/f2184972-bf06-468c-bbd7-3cd477a3dd1b" />
 ### Restart button
 Included underneath the end of quiz message the user is provided with a button to restart the quiz. 
 As with the answer buttons, on devices with hover capability the restart the quiz button is responsive upon hovering, in that it changes its background color, is slightly enlarged and framed by a border.
 Once the restart the quiz button has been clicked the quiz will resume with the 27 questions newly randomized and a score reset to zero.
+
 <img width="544" height="78" alt="Screenshot 2025-07-30 184814" src="https://github.com/user-attachments/assets/3138794c-df59-4fe3-99f7-ee1b22a392dd" />
 
 ## Potential additional features in the future
