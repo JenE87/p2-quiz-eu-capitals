@@ -2,6 +2,7 @@
 
 ## About the Project
 A browser-based multiple-choice quiz that tests users on their knowledge of European Union capital cities. It is built using HTML, CSS, and JavaScript. It offers a clean UI, real-time feedback, a score count throughout the quiz and a final score summary included in an end of quiz message.
+<img width="2594" height="1308" alt="Screenshot 2025-07-29 at 19 19 02" src="https://github.com/user-attachments/assets/f2e014c2-6dd4-464c-9dcd-dc5dadf7c11c" />
 
 ## Features
 ### Question line 
@@ -35,13 +36,20 @@ Once the restart the quiz button has been clicked the quiz will resume with the 
 - Minimalist styling using Calibri as font, sans serif font as backup, and EU colors and the EU flag as a background and favicon.
 
 ## Testing
-### Manual Testing 
-The website was tested on various screen sizes from small to large for its usability, responsiveness and overall layout.
-On different devices the quiz was run through until the end of quiz message and resumed by using the restart the quiz button or refreshing the page. 
-The randomization of questions is working without error. Visual feedback is provided upon selecting a correct (green answer button background) and or incorrect (red answer button background) answer. The live score increased upon selecting the correct answer button.
-The end of quiz message appears upon completion of all 27 questions and includes the total score achieved, as well as restart the quiz button.
-Once the restart the quiz button is clicked the quiz resumes with all 27 questions randomized. 
-On devices with the capability of hovering with a mouse/cursor, all buttons are responsive, as the cursor appears as a pointer (finger) and the button itself changes its background, enlarges and shows a border with EU themed color (yellow).
+### Manual Testing
+| What is being tested                                                                | Expected Outcome                                                         | Actual outcome             |
+|-------------------------------------------------------------------------------------|--------------------------------------------------------------------------|----------------------------|
+| Quiz loads on page open                                                             | First question and 4 answer buttons are shown                            | Works, as expected |
+| Answering a question correctly                                                      | Selected answer button turns green, score increases by 1                 | Works, as expected |
+| Answering a question incorrectly                                                    | Selected answer button turns red, score remains the same                 | Works, as expected |
+| Answering buttons disabled after selection (timeout time for test increased to 2s)  | All answer buttons become disabled after a selection                     | Works, as expected |
+| Buttons reset for next question                                                     | Buttons are re-enabled and colors cleared before the next question                                                                            | Works, as expected |
+| Score increases correctly                                                           | Score updates with each correct answer                                                                                                        | Works, as expected |
+| Final score and message displayed at the end of the quiz (after 27 questions)       | Quiz end message with correct score shown, quiz and score section hidden                                                                      | Works, as expected |
+| Restart button resets the quiz                                                      | Questions are randomized, score resets to 0, first question appears                                                                           | Works, as expected |
+| Questions randomize on restart                                                      | Order of questions is differenz each time the quiz is restarted                                                                               | Works, as expected |
+| Responsive layout on different screen sizes                                         | Quiz layout adjusts properly on mobile/tablet/desktop                                                                                         | Works, as expected |
+| Hover effect on buttons (only on devices with hover capability with mouse/cursor)   | Upon hovering cursor appears as a pointer, the button changes its background color, enlarges and shows a border with EU themed color (yellow) | Works, as expected |
 
 ### Lighthouse Testing
 
