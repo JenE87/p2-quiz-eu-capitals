@@ -83,11 +83,14 @@ Perfomance, Accessibility, Best Practises and SEO were analyzed through Lighthou
     - Function with the largest signature take 2 arguments, while the median is 0.
     - Largest function has 10 statements in it, while the median is 1.5.
     - The most complex function has a cyclomatic complexity value of 3 while the median is 1. 
+- WAVE® Evaluation Tool
+  - No errors were shown when passing through the [WAVE Web Accessibility Evaluation Tools](https://wave.webaim.org/)
+    <img width="1170" height="696" alt="Screenshot 2025-08-01 152835" src="https://github.com/user-attachments/assets/3cb65141-de6f-4ccc-8550-871498f9e8eb" />
 
 ### Fixed Bugs
 - On mobile devices the hover effect stayed on the latest selected answer button. This bug was fixed using a media query.
 - Spelling mistakes of city names (i.e. Tallinn and Brussels) were corrected.
-- Meta description and Keyword tags were added for SEO. 
+- Meta description and keyword tags were added for SEO. 
 
 ### Unfixed Bugs
 None
@@ -123,7 +126,7 @@ Other learning resources:
 ### Content & Media
 - The background image was downloaded from the open source site [pixabay](pixabay.com), user: OpenClipart-Vectors.
 - The European Union flag Favicon was downloaded from [Favicon.io](https://favicon.io/emoji-favicons/flag-european-union/).
-- Colors and color scheme were chosen based on information on colors of the EU system by the [European Commission](https://ec.europa.eu/component-library/v1.15.0/eu/components/detail/eu-style-color/)
+- Colors and color scheme were chosen based on information on colors of the EU system by the [European Commission](https://ec.europa.eu/component-library/v1.15.0/eu/components/detail/eu-style-color/).
   - #003776 (EC blue 120)
   - #ffd617 (EC yellow 100)
 - The list of EU countries and their capitals were taken from the European Union website: [Easy to read – about the EU](https://european-union.europa.eu/easy-read_en).
